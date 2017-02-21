@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420px"
+    android:layout_height="94px"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="15px">
+
+        <CheckBox
+            android:id="@+id/cb_sel"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_multi_selector"
+            android:button="@null" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@id/cb_sel"
+            android:background="@drawable/round_rect_red" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="208px"
+            android:layout_height="24px"
+            android:layout_alignTop="@id/iv_icon"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="应用"
+            android:textColor="@color/color_gray_3"
+            android:textSize="16px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="208px"
+            android:layout_height="20px"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="版本"
+            android:textColor="@color/color_gray_6"
+            android:textSize="14px" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="208px"
+            android:layout_height="20px"
+            android:layout_below="@id/tv_version"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@id/iv_icon"
+            android:text="2017-02-15"
+            android:textColor="@color/color_gray_6"
+            android:textSize="14px" />
+
+        <Button
+            android:id="@+id/btn_install"
+            android:layout_width="60px"
+            android:layout_height="28px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@drawable/round_rect_blue"
+            android:text="升级"
+            android:textColor="@color/color_blue"
+            android:textSize="14px" />
+    </RelativeLayout>
+
+</LinearLayout>

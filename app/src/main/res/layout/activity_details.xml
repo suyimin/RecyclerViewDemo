@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/public_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="320px"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:background="@color/color_gray_f5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50px"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10px"
+            android:text="进销存通用版"
+            android:textColor="@color/color_gray_3"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="30px"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="适用对象：\n小型超市便利店\n"
+            android:textColor="@color/color_gray_3"
+            android:textSize="16px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本"
+                android:textColor="@color/color_gray_3"
+                android:textSize="16px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="3.2.3"
+                android:textColor="@color/title_bg"
+                android:textSize="16px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大小"
+                android:textColor="@color/color_gray_3"
+                android:textSize="16px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="5.5M"
+                android:textColor="@color/title_bg"
+                android:textSize="16px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布日期"
+                android:textColor="@color/color_gray_3"
+                android:textSize="16px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="2017-02-17"
+                android:textColor="@color/title_bg"
+                android:textSize="16px" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100px"
+            android:layout_height="46px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60px"
+            android:background="@drawable/round_solid_rect_blue"
+            android:text="安装"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="892px"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/ll_left"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="476px"
+            android:layout_height="48px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="238px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_width="238px"
+                android:layout_height="48px"
+                android:background="@drawable/btn_bg_selector"
+                android:button="@null" />
+
+        </RadioGroup>
+
+        <WebView
+            android:id="@+id/wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px">
+
+        </WebView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_related"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

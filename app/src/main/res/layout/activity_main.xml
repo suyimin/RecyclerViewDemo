@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/public_title_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_shortcut"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="382px"
+        android:layout_below="@id/rv_shortcut"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/round_rect_gray"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="238px"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb_top"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:background="@drawable/round_rect_gray1_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/all_app_selector"
+                android:drawablePadding="10px"
+                android:paddingLeft="60px"
+                android:text="全部应用"
+                android:textColor="@drawable/round_color_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_middle"
+                android:layout_width="match_parent"
+                android:layout_height="126px"
+                android:background="@drawable/round_rect_gray2_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/update_app_selector"
+                android:drawablePadding="10px"
+                android:paddingLeft="60px"
+                android:text="升级应用"
+                android:textColor="@drawable/round_color_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:background="@drawable/round_rect_gray3_selector"
+                android:button="@null"
+                android:drawableLeft="@drawable/manage_app_selector"
+                android:drawablePadding="10px"
+                android:paddingLeft="60px"
+                android:text="管理应用"
+                android:textColor="@drawable/round_color_selector" />
+
+        </RadioGroup>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="930px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1px"
+            android:layout_marginTop="1px" />
+
+    </LinearLayout>
+
+</RelativeLayout>
