@@ -38,6 +38,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     private RadioButton rbTop, rbMiddle, rbBottom;
 
     public ArrayList<AppInfo> appInfos = new ArrayList<>();
+    private AllAdapter allAdapter;
+    private UpdateAdapter updateAdapter;
 
     @Override
     public void setRootView() {
@@ -78,9 +80,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         GridLayoutManager gm = new GridLayoutManager(this, 2);
         gm.setOrientation(GridLayoutManager.VERTICAL);
         rvMain.setLayoutManager(gm);
-        AllAdapter allAdapter = new AllAdapter();
-        UpdateAdapter updateAdapter = new UpdateAdapter(appInfos);
-        rvMain.setAdapter(updateAdapter);
+        allAdapter = new AllAdapter();
+        updateAdapter = new UpdateAdapter(appInfos);
+        rvMain.setAdapter(allAdapter);
         allAdapter.setOnItemClickListener(new AllAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
@@ -140,12 +142,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         switch (i) {
             case R.id.rb_top:
                 Log.e("==","全部应用");
+                rvMain.setAdapter(allAdapter);
                 break;
             case R.id.rb_middle:
                 Log.e("==","升级应用");
+                rvMain.setAdapter(updateAdapter);
                 break;
             case R.id.rb_bottom:
                 Log.e("==","管理应用");
+                rvMain.setAdapter(allAdapter);
                 break;
         }
     }
