@@ -5,35 +5,35 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.sunny.demo.R;
 
 /**
  * 主界面全部应用适配器.管理应用适配器
  */
-public class AllAdapter extends RecyclerView.Adapter {
+public class AllAdapter extends RecyclerView.Adapter<AllAdapter.AllViewHolder> {
 
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public AllViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_all, parent, false);
-        RecyclerView.ViewHolder holder = new RecyclerView.ViewHolder(view) {
-        };
+        AllViewHolder holder = new AllViewHolder(view);
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(AllViewHolder holder, int position) {
         final int pos = holder.getLayoutPosition();
-        ImageView icon = (ImageView) holder.itemView.findViewById(R.id.iv_icon);
-        Button btnInstall = (Button)holder.itemView.findViewById(R.id.btn_install);
+        //验证itemView的重用
+        holder.tvName.setText("应用" + pos + ",mTag:" + holder.itemView.getTag());
+        holder.itemView.setTag(pos);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mListener.onItemClick(pos);
             }
         });
-        btnInstall.setOnClickListener(new View.OnClickListener() {
+        holder.btnInstall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mInstallListener.onBtnInstallClick(pos);
@@ -64,5 +64,17 @@ public class AllAdapter extends RecyclerView.Adapter {
 
     public interface OnBtnInstallClickListener {
         void onBtnInstallClick(int position);
+    }
+
+    class AllViewHolder extends RecyclerView.ViewHolder {
+
+        Button btnInstall;
+        TextView tvName;
+
+        public AllViewHolder(View view) {
+            super(view);
+            btnInstall = (Button) view.findViewById(R.id.btn_install);
+            tvName = (TextView) view.findViewById(R.id.tv_name);
+        }
     }
 }

@@ -42,7 +42,9 @@ public class UpdateAdapter extends RecyclerView.Adapter {
         ImageView icon = (ImageView) holder.itemView.findViewById(R.id.iv_icon);
         TextView tvName = (TextView) holder.itemView.findViewById(R.id.tv_name);
         Button btnInstall = (Button) holder.itemView.findViewById(R.id.btn_install);
-        tvName.setText(mAppInfos.get(position).getName());
+        //itemView复用了，但是里面的内容被重新赋值了。
+        tvName.setText(mAppInfos.get(position).getName() + ",mTag:" + holder.itemView.getTag());
+        holder.itemView.setTag(pos);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
