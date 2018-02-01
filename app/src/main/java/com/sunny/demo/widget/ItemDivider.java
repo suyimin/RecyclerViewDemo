@@ -4,7 +4,9 @@ import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-
+/**
+ * 用于去掉最后一个分割线
+ */
 public class ItemDivider extends RecyclerView.ItemDecoration {
 
     private Integer mWidth;

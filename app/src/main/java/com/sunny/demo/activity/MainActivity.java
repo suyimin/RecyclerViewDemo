@@ -58,7 +58,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
         lm.setOrientation(LinearLayoutManager.HORIZONTAL);
         rvShortcut.setLayoutManager(lm);
         ItemDivider divider = new ItemDivider();
-        divider.setWidth(17);
+        divider.setWidth(34);
         rvShortcut.addItemDecoration(divider);
         ShortcutAdapter mAdapter = new ShortcutAdapter();
         rvShortcut.setAdapter(mAdapter);

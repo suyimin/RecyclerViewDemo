@@ -3,3 +3,5 @@
 如果是异步加载图片，要将tag设置为图片的url，设置ImageView的图片的时候，判断tag和url是否一致，一致方可赋值。<br>
 如何利用selector、layer-list、shape制作按钮背景。<br>
 横屏窗口式界面。<br>
+ItemDivider用于去掉RecyclerView最后一个分割线。<br>
+
