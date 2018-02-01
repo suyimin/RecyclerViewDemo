@@ -27,8 +27,10 @@
         </activity>
         <activity
             android:name="com.sunny.demo.activity.DetailsActivity"
-            android:screenOrientation="landscape">
-        </activity>
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.sunny.demo.activity.MultiItemActivity"
+            android:screenOrientation="landscape"></activity>
 
     </application>
 

@@ -4,4 +4,4 @@
 如何利用selector、layer-list、shape制作按钮背景。<br>
 横屏窗口式界面。<br>
 ItemDivider用于去掉RecyclerView最后一个分割线。<br>
-
+多Item布局RecyclerView。

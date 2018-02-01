@@ -66,7 +66,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
             @Override
             public void onItemClick(int position) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, DetailsActivity.class);
+                intent.setClass(MainActivity.this, MultiItemActivity.class);
                 startActivity(intent);
             }
         });
