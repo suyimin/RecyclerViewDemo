@@ -28,8 +28,8 @@ public abstract class BaseActivity extends Activity {
         final DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         final WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
-        layoutParams.width = 1212;
-        layoutParams.height = 600;
+        layoutParams.width = 2424;
+        layoutParams.height = 1200;
         layoutParams.gravity = Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM;
         layoutParams.verticalMargin = 0.057f;
         getWindow().setAttributes(layoutParams);

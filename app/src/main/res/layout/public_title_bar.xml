@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="60px"
+    android:layout_height="120px"
     android:background="@color/title_bg">
 
     <ImageView
         android:id="@+id/img_back"
-        android:layout_width="40px"
-        android:layout_height="40px"
+        android:layout_width="80px"
+        android:layout_height="80px"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="20px"
+        android:layout_marginLeft="40px"
         android:src="@mipmap/ic_back" />
 
     <ImageView
         android:id="@+id/img_close"
-        android:layout_width="40px"
-        android:layout_height="40px"
+        android:layout_width="80px"
+        android:layout_height="80px"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="20px"
+        android:layout_marginRight="40px"
         android:src="@mipmap/ic_close" />
 
     <TextView
@@ -32,6 +32,6 @@
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="@color/white"
-        android:textSize="30px" />
+        android:textSize="60px" />
 
 </RelativeLayout>

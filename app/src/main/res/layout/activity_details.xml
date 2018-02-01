@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:id="@+id/ll_left"
-        android:layout_width="320px"
+        android:layout_width="640px"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/title"
@@ -18,37 +18,37 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="96px"
-            android:layout_height="96px"
+            android:layout_width="192px"
+            android:layout_height="192px"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50px"
+            android:layout_marginTop="100px"
             android:background="@drawable/ic_launcher" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10px"
+            android:layout_marginTop="20px"
             android:text="进销存通用版"
             android:textColor="@color/color_gray_3"
-            android:textSize="24px" />
+            android:textSize="48px" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="60px"
-            android:layout_marginLeft="24px"
-            android:layout_marginTop="30px"
+            android:layout_height="120px"
+            android:layout_marginLeft="48px"
+            android:layout_marginTop="60px"
             android:ellipsize="end"
             android:maxLines="3"
             android:text="适用对象：\n小型超市便利店\n"
             android:textColor="@color/color_gray_3"
-            android:textSize="16px" />
+            android:textSize="32px" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24px"
-            android:layout_marginTop="30px"
+            android:layout_marginLeft="48px"
+            android:layout_marginTop="60px"
             android:orientation="horizontal">
 
             <TextView
@@ -56,23 +56,23 @@
                 android:layout_height="wrap_content"
                 android:text="版本"
                 android:textColor="@color/color_gray_3"
-                android:textSize="16px" />
+                android:textSize="32px" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20px"
+                android:layout_marginLeft="40px"
                 android:text="3.2.3"
                 android:textColor="@color/title_bg"
-                android:textSize="16px" />
+                android:textSize="32px" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24px"
-            android:layout_marginTop="10px"
+            android:layout_marginLeft="48px"
+            android:layout_marginTop="20px"
             android:orientation="horizontal">
 
             <TextView
@@ -80,23 +80,23 @@
                 android:layout_height="wrap_content"
                 android:text="大小"
                 android:textColor="@color/color_gray_3"
-                android:textSize="16px" />
+                android:textSize="32px" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20px"
+                android:layout_marginLeft="40px"
                 android:text="5.5M"
                 android:textColor="@color/title_bg"
-                android:textSize="16px" />
+                android:textSize="32px" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24px"
-            android:layout_marginTop="10px"
+            android:layout_marginLeft="48px"
+            android:layout_marginTop="20px"
             android:orientation="horizontal">
 
             <TextView
@@ -104,32 +104,32 @@
                 android:layout_height="wrap_content"
                 android:text="发布日期"
                 android:textColor="@color/color_gray_3"
-                android:textSize="16px" />
+                android:textSize="32px" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20px"
+                android:layout_marginLeft="40px"
                 android:text="2017-02-17"
                 android:textColor="@color/title_bg"
-                android:textSize="16px" />
+                android:textSize="32px" />
 
         </LinearLayout>
 
         <Button
-            android:layout_width="100px"
-            android:layout_height="46px"
+            android:layout_width="200px"
+            android:layout_height="92px"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="60px"
+            android:layout_marginTop="120px"
             android:background="@drawable/round_solid_rect_blue"
             android:text="安装"
             android:textColor="@color/white"
-            android:textSize="24px" />
+            android:textSize="48px" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_right"
-        android:layout_width="892px"
+        android:layout_width="1784px"
         android:layout_height="match_parent"
         android:layout_below="@id/title"
         android:layout_toRightOf="@id/ll_left"
@@ -137,21 +137,21 @@
         android:orientation="vertical">
 
         <RadioGroup
-            android:layout_width="476px"
-            android:layout_height="48px"
-            android:layout_marginLeft="30px"
-            android:layout_marginTop="30px"
+            android:layout_width="952px"
+            android:layout_height="96px"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="60px"
             android:orientation="horizontal">
 
             <RadioButton
-                android:layout_width="238px"
-                android:layout_height="48px"
+                android:layout_width="476px"
+                android:layout_height="96px"
                 android:background="@drawable/btn_bg_selector"
                 android:button="@null" />
 
             <RadioButton
-                android:layout_width="238px"
-                android:layout_height="48px"
+                android:layout_width="476px"
+                android:layout_height="96px"
                 android:background="@drawable/btn_bg_selector"
                 android:button="@null" />
 
@@ -161,10 +161,10 @@
             android:id="@+id/wv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="30px"
-            android:layout_marginLeft="30px"
-            android:layout_marginRight="30px"
-            android:layout_marginTop="30px">
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="60px">
 
         </WebView>
 
@@ -172,10 +172,10 @@
             android:id="@+id/rv_related"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="30px"
-            android:layout_marginLeft="30px"
-            android:layout_marginRight="30px"
-            android:layout_marginTop="30px">
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="60px"
+            android:layout_marginRight="60px"
+            android:layout_marginTop="60px">
 
         </android.support.v7.widget.RecyclerView>
 

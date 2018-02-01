@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="280px"
-    android:layout_height="100px"
+    android:layout_width="560px"
+    android:layout_height="200px"
     android:background="@color/white"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/iv"
-        android:layout_width="280px"
-        android:layout_height="100px"
+        android:layout_width="560px"
+        android:layout_height="200px"
         android:background="@drawable/round_rect_red" />
 
 </LinearLayout>

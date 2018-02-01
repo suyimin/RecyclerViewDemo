@@ -37,6 +37,7 @@ public class UpdateAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, final int position) {
         final int pos = holder.getLayoutPosition();
         final CheckBox cbSel = (CheckBox) holder.itemView.findViewById(R.id.cb_sel);
+        //当再次展示该item赋值时，根据集合中对应对象的数据来初始化item状态。
         cbSel.setChecked(mAppInfos.get(position).getChecked());
         ImageView icon = (ImageView) holder.itemView.findViewById(R.id.iv_icon);
         TextView tvName = (TextView) holder.itemView.findViewById(R.id.tv_name);
@@ -51,6 +52,7 @@ public class UpdateAdapter extends RecyclerView.Adapter {
         cbSel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //当对当前item做点击等事件操作时，需要把当前状态值保存到对应集合的对象中去。
                 if (mAppInfos.get(position).getChecked()) {
                     mAppInfos.get(position).setChecked(false);
                 } else {

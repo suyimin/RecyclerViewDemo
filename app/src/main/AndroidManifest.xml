@@ -13,19 +13,23 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:screenOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/gyFloatTheme">
         <activity
             android:name="com.sunny.demo.activity.MainActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sunny.demo.activity.DetailsActivity"></activity>
+        <activity
+            android:name="com.sunny.demo.activity.DetailsActivity"
+            android:screenOrientation="landscape">
+        </activity>
+
     </application>
 
 </manifest>
